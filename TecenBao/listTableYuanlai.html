@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 条纹表格</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .centerRight{
+            text-align:right;
+            vertical-align:middle;
+            padding-left: 20px;
+        }
+        #search{
+            padding: 10px;
+            margin: 10px;
+        }
+        .tableTr{
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+<!-- 搜索框 -->
+<div style="margin:1% 10%" style="border: none">
+    <div  style="border: solid 2px #DDD; ">
+        <table id="search"  >
+        <tr class="tableTr">
+            <td class="centerRight">客户姓名：</td><td><input type="text"></td>
+            <td class="centerRight">主题：</td><td><input type="text"></td>
+            <td class="centerRight">编号：</td><td><input type="text"></td>
+        </tr>
+        <tr class="tableTr">
+            <td class="centerRight">优先级：</td><td><input type="text"></td>
+            <td class="centerRight">状态：</td><td><input type="text"></td>
+            <td class="centerRight">责任人：</td><td><input type="text"></td>
+        </tr>
+        <tr class="tableTr">
+            <td class="centerRight">事件类型：</td><td><input type="text"></td>
+            <td class="centerRight">创建起始时间：</td><td><input type="text">&nbsp;&nbsp;至&nbsp;&nbsp;<input type="text"></td>
+            <td class="centerRight"><button class=" btn btn-info" >查找</button></td>
+            <td></td>
+        </tr>
+        </table>
+    </div>
+</div><!-- 搜索框结束 -->
+<!-- 显示表单 -->
+<div style="width: 80%;margin:0 auto;">
+<table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th><input type="checkbox" name="check"></th>
+        <th>编号</th>
+        <th>客户姓名</th>
+        <th>主题</th>
+        <th>密码</th>
+        <th>优先级</th>
+        <th>状态</th>
+        <th>责任人</th>
+        <th>事件类型</th>
+        <th>创建起止日期</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00001</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00002</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00003</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00004</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00005</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00006</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="check"></td>
+        <td>QA00007</td>
+        <td>张三</td>
+        <td>维修</td>
+        <td>1</td>
+        <td>P1</td>
+        <td>已处理</td>
+        <td>李四</td>
+        <td>维修</td>
+        <td>20161019</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>
