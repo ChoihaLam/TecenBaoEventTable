@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>TecenBao事件服务工作单--修改版</title>
+    <title>问题服务工单--初版</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -94,7 +94,7 @@
         }
 
         .textareaWidth{
-            width: 95%;
+            width: 99.5%;
         }
         .inputText{
             width: auto;
@@ -128,72 +128,37 @@
         </div>
     </div>
 </div>
-<div style="width: 80%;margin:0 auto;">
+<div style="width: 88%;margin:0 auto;">
 
     <!--表单开始-->
     <div class="table-responsive " style="padding-top: 4%" >
         <table  class="table table-bordered table-condensed " >
             <caption></caption>
 
-            <thead><tr><td colspan="4" class="text-left" style="border-right: none">编号：SJ2016000001</td>
-                <td  colspan="3"class="text-right" style="border-left: none">日期：2016-10-27</td></tr></thead>
-            <thead><tr><th colspan="7" class="text-center" style="font-size: 24px;">事件服务工作单</th></tr></thead>
-            <thead><tr class="active"><th colspan="7"  class="text-center" >客户信息</th></tr></thead>
+            <thead><tr><td colspan="4" class="text-left" style="border-right: none">编号：QA2016000001</td>
+                <td  colspan="4"class="text-right" style="border-left: none">日期：2016-10-28</td></tr></thead>
+            <thead><tr><th colspan="8" class="text-center" style="font-size: 24px;">问题服务工单</th></tr></thead>
+            <!--<thead><tr class="active"><th colspan="7"  class="text-center" >客户信息</th></tr></thead>-->
             <tbody>
             <tr>
-                <td class="centerRight" >客户姓名：</td>
-                <td colspan="2"><input type="text" class="inputText"/></td>
-                <td class="centerRight">联系电话：</td>
-                <td ><input type="text" class="inputText" /></td>
-                <td class="centerRight">联系邮箱：</td>
-                <td colspan="1"><input type="text" class="inputText" /></td>
+                <td class="centerRight" style="width: 170px;">主题：</td>
+                <td colspan="7"></td>
             </tr>
             <tr>
-                <td class="centerRight">其他信息：</td>
-                <td colspan="6"><textarea class="textareaWidth" ></textarea></td>
-            </tr>
-
-            </tr>
-            </tbody>
-
-            <thead><tr class="active"><th colspan="7" class="text-center" >事件信息</th></tr></thead>
-            <tbody>
-            <tr>
+                <td class="centerRight" >问题来源：</td>
+                <td colspan="1"></td>
+                <td class="centerRight">事件编号：</td>
+                <td >SJ2016000001</td>
+                <td class="centerRight">问题分类：</td>
+                <td colspan="1" style="width: 150px;"></td>
                 <td class="centerRight">所属项目：</td>
-                <td colspan="2"><input type="text" class="inputText" /></td>
-                <td class="centerRight">所属产品：</td>
-                <td style="border-right: none;"><input type="text" /></td>
-                <td style="border-right: none;border-left: none;" ><button>选择所属产品</button></td>
-                <td style="border-left:  none;"><a href="#">详细</a></td>
-
+                <td colspan="1"><input type="text" class="inputText"/></td>
             </tr>
             <tr>
-                <td class="centerRight">事件主题：</td>
-                <td colspan="6"><input type="text" class="inputText" /></td>
+                <td class="centerRight">问题现状描述：</td>
+                <td colspan="7"><textarea class="textareaWidth" ></textarea></td>
             </tr>
             <tr>
-                <td class="centerRight">事件描述：</td>
-                <td colspan="6"><textarea class="textareaWidth" ></textarea></td>
-            </tr>
-            <!-- 一线人员填写 -->
-            <tr class="">
-                <td class="centerRight">事件类型：</td>
-                <td  style="border-right: none">
-                    <select id="type" onchange="showtype1()">
-                        <option value="1">询问</option>
-                        <option value="2">故障</option>
-                        <option value="3">需求</option>
-                        <option value="4">投诉建议</option>
-                    </select>
-                </td>
-                <td  style="border-left: none;width: 50px"><select id="type1" style="display: none">
-                    <option value="1">硬件</option>
-                    <option value="2">软件</option>
-                    <option value="3">配置</option>
-                    <option value="4">网络</option>
-                    <option value="5">操作</option>
-                    <option value="6">其他</option>
-                </select></td>
                 <td class="centerRight">影响程度：</td>
                 <td >
                     <input type="radio" checked="checked" value="1"  />高
@@ -206,103 +171,98 @@
                     <input type="radio" name="yd" value="2" onchange="showyxj()"/>中
                     <input type="radio" name="yd" value="3" onchange="showyxj()"/>低
                 </td>
-            </tr>
-            <tr>
                 <td  style="text-align:right;vertical-align:middle;" >优先级：</td>
-                <td  colspan="2" style="vertical-align:middle;">
+                <td  colspan="3" style="vertical-align:middle;">
                     <div id="yxj">
                         P1
                     </div>
                 </td>
-                <td  style="text-align:right;vertical-align:middle;" >处理状态：</td>
-                <td  colspan="3" style="vertical-align:middle;">
-                    <div id="clzt">
-                        新建
-                    </div>
-                </td>
             </tr>
             <tr>
-                <td class="centerRight">开始时间：</td>
-                <td colspan="2"><input type="text" class="inputText" /></td>
                 <td class="centerRight">计划完成时间：</td>
                 <td colspan=""><input type="text"  /></td>
                 <td class="centerRight">实际完成时间：</td>
-                <td colspan=""><input type="text"  /></td>
+                <td colspan="5"><input type="text"  /></td>
             </tr>
             <tr class="">
-                <td class="centerRight">事件原因：</td>
-                <td colspan="6" ><textarea class="textareaWidth"></textarea></td>
+                <td class="centerRight">影响范围：</td>
+                <td colspan="7" ><textarea class="textareaWidth"></textarea></td>
             </tr>
             <tr>
-                <td class="centerRight">解决方案：</td>
-                <td colspan="6" ><textarea class="textareaWidth"></textarea></td>
+                <td class="centerRight">涉及资产CI：</td>
+                <td colspan="7" ><textarea class="textareaWidth"></textarea></td>
             </tr>
             <tr>
                 <td class="centerRight"><span for="inputfile">添加附件：</span></td>
-                <td colspan="6">
-                    <input type="file" id="inputfile" class="text-center" ></td>
+                <td colspan="7">
+                    </td>
             </tr>
             <tr class="warning">
                 <td  class="centerRight">处理过程记录：</td>
-                <td colspan="6" style="border-right: none;vertical-align:middle;" >
+                <td colspan="7" style="border-right: none;vertical-align:middle;" >
 
-                </tr>
+            </tr>
             <tr class="warning">
                 <td  class="centerRight" >填写处理过程：</td>
-                <td colspan="5" style="border-right: none;vertical-align:middle;" >
+                <td colspan="6" style="border-right: none;vertical-align:middle;" >
                     <textarea style="width:100%" ></textarea></td>
                 <td style="border-left: none;vertical-align:middle;"><button>发送</button></td>
             </tr>
-
-                <tr>
-                    <td  class="centerRight">创建者：</td>
-                    <td colspan="2" ><input type="text" /></td>
+            <tr>
+                    <td  class="centerRight">问题提出人：</td>
+                    <td colspan="1" ><input type="text" /></td>
                     <td  class="centerRight">责任人：</td>
-                    <td style="border-right: none;"><input type="text" /></td>
-                    <td style="border-left: none;" colspan="2"><button>选择责任人</button></td>
+                <td colspan="1" style="border-right: none;vertical-align:middle;" >
+                    <input style="width:100%" /></td>
+                <td  colspan="4" style="border-left: none;vertical-align:middle;"><button>选择责任人</button></td>
 
-                </tr>
+            </tr>
             <tr>
                 <td  class="centerRight">抄送给：</td>
-                <td colspan="5" style="border-right: none;vertical-align:middle;" >
-                    <input style="width:100%" ></input></td>
+                <td colspan="6" style="border-right: none;vertical-align:middle;" >
+                    <input style="width:100%" /></td>
                 <td style="border-left: none;vertical-align:middle;"><button>添加</button></td>
             </tr>
 
             <!-- 一线、二线和事件经理都有权限 -->
 
             <tr>
+                <td class="centerRight">正式解决方案/临时措施：</td>
+                <td colspan="7"><textarea class="textareaWidth"></textarea></td>
+            </tr>
+
+            <!-- 一线、二线和事件经理都有权限 -->
+
+            <tr>
+                <td  class="centerRight">审核人：</td>
+                <td colspan="1" ></td>
+                <td  class="centerRight">审核日期：</td>
+                <td colspan="5" ></td>
+            </tr>
+            <tr>
+            <tr>
                 <td colspan="" class="centerRight">评价：</td>
-                <td colspan="2">
+                <td colspan="7">
                     <input type="radio" name="jd" value="1"  onchange="showyxj()"/>良好
                     <input type="radio" name="jd" value="2" checked="checked" onchange="showyxj()"/>正常
                     <input type="radio" name="jd" value="3" onchange="showyxj()"/>不足
 
-                </td>
-                <td class="centerRight">审核人：</td>
-                <td colspan=""><input type="text" /></td>
-                <td class="centerRight">审核日期：</td>
-                <td><input type="text" /></td>
             </tr>
             <tr>
-                <td class="centerRight">审核意见：</td>
-                <td colspan="6"><textarea class="textareaWidth"></textarea></td>
-            </tr>
+                <td class="centerRight" >意见：</td>
+                <td colspan="7"><textarea class="textareaWidth"></textarea></td>
 
-            <!-- 一线、二线和事件经理都有权限 -->
-            <tr>
-                <td class="centerRight" >已关联问题：</td>
-                <td colspan="6" style="vertical-align:middle;" ><textarea style="width:95%"></textarea></td>
             </tr>
             <tr>
-                <td class="centerRight" >变更：</td>
-                <td colspan="6" style="border-right: none;vertical-align:middle;" ><textarea style="width:95%"></textarea></td>
+                <td class="centerRight" >变更关联：</td>
+                <td colspan="7" style="vertical-align:middle;" ><textarea class="textareaWidth"></textarea></td>
             </tr>
             <tr>
                 <td class="centerRight" >知识库：</td>
-                <td colspan="5" style="border-right: none;vertical-align:middle;" ><textarea style="width:100%"></textarea></td>
+                <td colspan="6" style="border-right: none;vertical-align:middle;" ><textarea style="width:100%"></textarea></td>
                 <td style="border-left: none;vertical-align:middle;"><input id="Button3" type="button" value="知识库匹配" onclick="ShowDiv('MyDiv','fade')" /></td>
             </tr>
+
             </tbody>
         </table>
     </div> <!-- 表单结束 -->
