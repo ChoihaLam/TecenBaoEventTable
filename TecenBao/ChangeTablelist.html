@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 条纹表格</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .centerRight{
+            text-align:right;
+            vertical-align:middle;
+        }
+        #search{
+            padding: 20px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 搜索框 -->
+<div style="margin:1% 10%;border: none">
+    <select class="btn btn-default">
+        <option value="1">客户姓名</option>
+        <option value="2">主题</option>
+        <option value="3">编号</option>
+        <option value="4">优先级</option>
+        <option value="5">状态</option>
+        <option value="6">责任人</option>
+        <option value="7">事件类型</option>
+    </select>
+    <input type="text" value="请输入关键字查询" style="color:#AAB6CA;" onfocus="if(value=='请输入关键字查询'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#AAB6CA';value='请输入关键字查询'}"/>
+    <button class="btn btn-info">确定</button>
+    <!--增删按钮begin-->
+    <button class="btn btn-danger" style="float: right;margin-left: 10px">删除</button>
+    <button class="btn btn-success"style="float: right;">新增</button>
+    <!--增删按钮end-->
+</div><!-- 搜索框结束 -->
+<!-- 显示表单 -->
+<div style="width: 80%;margin:0 auto;">
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th><input type="checkbox" name="check"></th>
+        <th>变更编号</th>
+        <th>变更申请人</th>
+        <th>变更名称</th>
+        <th>变更来源</th>
+        <th>变更类型</th>
+        <th>状态</th>
+        <th>优先级</th>
+        <th>责任人</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td></td>
+        <td>BG2016000001</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>BG2016000002</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>BG2016000003</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>BG2016000004</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>BG2016000005</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>BG2016000006</td>
+        <td>张三</td>
+        <td>变更配置</td>
+        <td>事件</td>
+        <td>配置需求</td>
+        <td>已处理</td>
+        <td>高</td>
+        <td>张三</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

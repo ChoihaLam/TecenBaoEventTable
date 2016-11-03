@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>变更申请单--初版</title>
+    <title>配置申请单--初版</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -130,93 +130,50 @@
         </div>
     </div>
 </div> -->
-<div style="width: 88%;margin:0 auto;">
+<div style="width: 60%;margin:0 auto;">
 
     <!--表单开始-->
     <div class="table-responsive " style="padding-top: 4%" >
         <table  class="table table-bordered table-condensed " >
             <caption></caption>
 
-            <thead><tr><td colspan="4" class="text-left" style="border-right: none">编号：BG2016000001</td>
-                <td  colspan="4"class="text-right" style="border-left: none">日期：2016-10-28</td></tr></thead>
-            <thead><tr><th colspan="8" class="text-center" style="font-size: 24px;">变更申请单</th></tr></thead>
+            <thead><tr><td colspan="2" class="text-left" style="border-right: none">编号：PZ2016000001</td>
+                <td  colspan="2"class="text-right" style="border-left: none">日期：2016-10-28</td></tr></thead>
+            <thead><tr><th colspan="4" class="text-center" style="font-size: 24px;">配置信息单</th></tr></thead>
             <tbody>
             <tr>
-                <td class="centerRight" style="width: 170px;">变更名称：</td>
-                <td colspan="7"></td>
+                <td class="centerRight" >配置来源：</td>
+                <td colspan="1"></td>
+                <td class="centerRight">合同（变更）编号：</td>
+                <td >BG2016000001</td>
             </tr>
             <tr>
-                <td class="centerRight" >变更来源：</td>
-                <td colspan="1"></td>
-                <td class="centerRight">事件（问题）编号：</td>
-                <td >SJ2016000001</td>
-                <td class="centerRight">变更类型：</td>
-                <td colspan="1" style="width: 150px;"></td>
-                <td class="centerRight">变更申请人：</td>
+                <td class="centerRight">所属项目：</td>
+                <td colspan="1" style="width: 200px;"></td>
+                <td class="centerRight">涉及资产CI：</td>
                 <td colspan="1"><input type="text" class="inputText"/></td>
             </tr>
             <tr>
-                <td class="centerRight" >所属项目：</td>
-                <td colspan="1"><input type="text"/></td>
-                <td class="centerRight">责任人：</td>
-                <td style="width: 130px"></td>
-                <td class="centerRight">变更影响程度：</td>
-                <td >
-                    <input type="radio" checked="checked" value="1"  />高
-                    <input type="radio" name="yd" value="2" onchange="showyxj()"/>中
-                    <input type="radio" name="yd" value="3" onchange="showyxj()"/>低
-                </td>
-                <td class="centerRight">变更紧急程度：</td>
-                <td >
-                    <input type="radio" checked="checked" value="1"  />高
-                    <input type="radio" name="yd" value="2" onchange="showyxj()"/>中
-                    <input type="radio" name="yd" value="3" onchange="showyxj()"/>低
-                </td>
+                <td class="centerRight">配置提出人：</td>
+                <td ></td>
+                <td class="centerRight">配置负责人：</td>
+                <td colspan="1" ></td>
             </tr>
             <tr>
-                <td class="centerRight" >优先级：</td>
-                <td colspan="1">P1</td>
-                <td class="centerRight">计划完成时间：</td>
-                <td ></td>
-                <td class="centerRight">实际关闭时间：</td>
-                <td colspan="1" ></td>
-                <td class="centerRight">处理状态：</td>
-                <td colspan="1" ></td>
+                <td class="centerRight">配置管理计划：</td>
+                <td colspan="2" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
+                <td colspan="1" style="border-left: none;vertical-align:middle;"><button>上传</button></td>
 
             </tr>
             <tr>
-                <td class="centerRight">涉及资产CI：</td>
-                <td colspan="7"></td>
-            </tr>
-            <tr>
-                <td class="centerRight">变更摘要：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
-                <td colspan="1" style="border-left: none;"></td>
-            </tr>
-            <tr>
-                <td class="centerRight">变更评估/评审：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
-                <td colspan="1" style="border-left: none;"></td>
-            </tr>
-            <tr>
-                <td class="centerRight">变更方案：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
+                <td class="centerRight">配置执行情况：</td>
+                <td colspan="2" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
                 <td colspan="1" style="border-left: none;"></td>
             </tr>
 
             <tr >
-                <td class="centerRight">方案执行情况：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
-                <td colspan="1" style="border-left: none;"></td>
-            </tr>
-            <tr>
-                <td class="centerRight">发布记录：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
-                <td colspan="1" style="border-left: none;"></td>
-            </tr>
-            <tr>
-                <td class="centerRight">配置记录：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
+                <td class="centerRight">配置清单：</td>
+                <td colspan="2" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
                 <td colspan="1" style="border-left: none;"></td>
             </tr>
             <!--<tr class="warning">-->

@@ -107,15 +107,23 @@
 </head>
 <body>
 
-<!--按钮模块
+<!--按钮模块-->
 <div style="position:fixed;width: 100%;background-color: rgba(238,238,238,0.7); ">
     <div class="text-right"style="float: right;padding:0.5% 10% 1% ">
-        <button type="button" class="btn btn-info">问题工单日志</button>
+        <button type="button" class="btn btn-info">变更申请单日志</button>
         <button type="button" class="btn btn-info">挂起/打开</button>
-        <button type="button" class="btn btn-info">派生变更</button>
+        <button type="button" class="btn btn-info">派生配置</button>
+        <button type="button" class="btn btn-info">审核</button>
         <button type="button" class="btn btn-info">关闭</button>
+        <button type="button" class="btn btn-info">处理完成</button>
+        <button type="button" class="btn btn-info">导入</button>
+        <button type="button" class="btn btn-info">导出</button>
+        <button type="button" class="btn btn-info">更新</button>
+        <button type="button" class="btn btn-info">回退</button>
         <button type="button" class="btn btn-success">新增</button>
         <button type="button" class="btn btn-success">处理</button>
+        <button type="button" class="btn btn-danger">审核不通过</button>
+        <button type="button" class="btn btn-success">审核通过</button>
         <div class="btn-group" >
             <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">提交工单
                 <span class="caret"></span>
@@ -129,7 +137,7 @@
             </ul>
         </div>
     </div>
-</div> -->
+</div>
 <div style="width: 88%;margin:0 auto;">
 
     <!--表单开始-->
@@ -143,41 +151,41 @@
             <tbody>
             <tr>
                 <td class="centerRight" style="width: 170px;">变更名称：</td>
-                <td colspan="7"></td>
+                <td colspan="7">变更工单一</td>
             </tr>
             <tr>
                 <td class="centerRight" >变更来源：</td>
-                <td colspan="1"></td>
+                <td colspan="1">事件</td>
                 <td class="centerRight">事件（问题）编号：</td>
-                <td >SJ2016000001</td>
+                <td >BG2016000001</td>
                 <td class="centerRight">变更类型：</td>
-                <td colspan="1" style="width: 150px;"></td>
+                <td colspan="1" style="width: 150px;">配置需求</td>
                 <td class="centerRight">变更申请人：</td>
-                <td colspan="1"><input type="text" class="inputText"/></td>
+                <td colspan="1">张三</td>
             </tr>
             <tr>
                 <td class="centerRight" >所属项目：</td>
-                <td colspan="1"><input type="text"/></td>
+                <td colspan="1">德生宝-德生宝1</td>
                 <td class="centerRight">责任人：</td>
-                <td style="width: 130px"></td>
+                <td style="width: 130px">张三</td>
                 <td class="centerRight">变更影响程度：</td>
-                <td >
-                    <input type="radio" checked="checked" value="1"  />高
-                    <input type="radio" name="yd" value="2" onchange="showyxj()"/>中
-                    <input type="radio" name="yd" value="3" onchange="showyxj()"/>低
+                <td >高
+                    <!--<input type="radio" checked="checked" value="1"  />高-->
+                    <!--<input type="radio" name="yd" value="2" onchange="showyxj()"/>中-->
+                    <!--<input type="radio" name="yd" value="3" onchange="showyxj()"/>低-->
                 </td>
                 <td class="centerRight">变更紧急程度：</td>
-                <td >
-                    <input type="radio" checked="checked" value="1"  />高
+                <td >高
+                    <!--<input type="radio" checked="checked" value="1"  />高
                     <input type="radio" name="yd" value="2" onchange="showyxj()"/>中
-                    <input type="radio" name="yd" value="3" onchange="showyxj()"/>低
+                    <input type="radio" name="yd" value="3" onchange="showyxj()"/>低 -->
                 </td>
             </tr>
             <tr>
                 <td class="centerRight" >优先级：</td>
                 <td colspan="1">P1</td>
                 <td class="centerRight">计划完成时间：</td>
-                <td ></td>
+                <td >2016-11-11</td>
                 <td class="centerRight">实际关闭时间：</td>
                 <td colspan="1" ></td>
                 <td class="centerRight">处理状态：</td>
@@ -186,7 +194,7 @@
             </tr>
             <tr>
                 <td class="centerRight">涉及资产CI：</td>
-                <td colspan="7"></td>
+                <td colspan="7">硬件</td>
             </tr>
             <tr>
                 <td class="centerRight">变更摘要：</td>
@@ -216,7 +224,7 @@
             </tr>
             <tr>
                 <td class="centerRight">配置记录：</td>
-                <td colspan="6" style="border-right: none;"><textarea class="textareaWidth" ></textarea></td>
+                <td colspan="6" style="border-right: none;"><a href="#">工单配置信息</a></td>
                 <td colspan="1" style="border-left: none;"></td>
             </tr>
             <!--<tr class="warning">-->
